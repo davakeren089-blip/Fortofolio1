@@ -1,0 +1,181 @@
+/* === GLOBAL === */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #1f1f2e;
+  color: #f1f1f1;
+}
+h2 {
+  text-align: center;
+  color: #f97316;
+  margin-bottom: 20px;
+}
+.section {
+  padding: 80px 20px;
+}
+.bg-dark { background: #2a2a3b; }
+
+/* === NAVBAR === */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #2a2a3b;
+  padding: 15px 0;
+  z-index: 1000;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.navbar .logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #ddd;
+  transition: 0.3s;
+}
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+  color: #f97316;
+}
+
+/* === HERO === */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 120px 10% 50px;
+  gap: 40px;
+}
+.hero-text {
+  flex: 1;
+}
+.hero-text h2 span { color: #f97316; }
+.hero-img img {
+  width: 280px;
+  border-radius: 50%;
+  border: 6px solid #f97316;
+}
+
+/* === BUTTON === */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #f97316;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.btn:hover { background: #ea580c; }
+
+/* === SKILLS === */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+.skill-box {
+  background: #2a2a3b;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+.skill-box:hover {
+  background: #f97316;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/* === PROJECTS === */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #2a2a3b;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  border-bottom: 3px solid #f97316;
+}
+.card h3 { color: #f97316; }
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(249,115,22,0.4);
+}
+
+/* === CONTACT === */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form input, form textarea {
+  background: #2a2a3b;
+  border: 2px solid #444;
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+}
+form input:focus, form textarea:focus {
+  border-color: #f97316;
+  outline: none;
+  box-shadow: 0 0 8px rgba(249,115,22,0.6);
+}
+form button { background: #f97316; border: none; cursor: pointer; }
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2a2a3b;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* === RESPONSIVE === */
+@media(max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text { max-width: 100%; }
+  .hero-img { margin-top: 20px; }
+  .navbar .nav-links { display: none; } /* sembunyiin menu besar */
+}
+
+/* Tablet dan HP */
+@media(max-width: 768px) {
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .projects-grid { grid-template-columns: 1fr; }
+}
+
+/* HP kecil */
+@media(max-width: 480px) {
+  .skills-grid { grid-template-columns: 1fr; }
+  .hero-img img { width: 200px; }
+}

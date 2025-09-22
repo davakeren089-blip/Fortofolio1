@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Dava Aprliyan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Dava Aprliyan</h1>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Hello, I’m <span>Dava Aprliyan</span></h2>
+      <p>Full-stack Developer | UI/UX Enthusiast</p>
+      <a href="#contact" class="btn">Let’s Talk</a>
+    </div>
+    <div class="hero-img">
+      <img src="images/profile.jpg" alt="Profile">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section bg-dark">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Saya adalah seorang web developer dengan pengalaman dalam PHP, JavaScript, dan framework modern.
+        Terbiasa membuat aplikasi website yang responsif dan clean UI.
+        Memiliki passion di bidang desain UI/UX serta pengembangan back-end.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section bg-dark">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <img src="images/project1.jpg" alt="Project 1">
+          <h3>Portfolio Website</h3>
+          <p>Website portofolio pribadi dengan desain modern dan responsif.</p>
+        </div>
+        <div class="card">
+          <img src="images/project1.jpg" alt="Project 2">
+          <h3>E-Commerce</h3>
+          <p>Sistem toko online sederhana dengan fitur keranjang dan checkout.</p>
+        </div>
+        <div class="card">
+          <img src="images/project1.jpg" alt="Project 3">
+          <h3>Blog Platform</h3>
+          <p>Platform blog dengan dashboard admin dan editor artikel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="mailto:yourmail@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Nama Anda" required>
+        <input type="email" name="email" placeholder="Email Anda" required>
+        <textarea name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Dava Aprliyan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
